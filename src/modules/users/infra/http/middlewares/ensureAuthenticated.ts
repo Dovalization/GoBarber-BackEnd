@@ -33,8 +33,6 @@ export default function EnsureAuthenticated(
       id: sub,
     };
 
-    console.log(decoded);
-
     return next();
   } catch {
     throw new AppError('Invalid JWT token', 401);
