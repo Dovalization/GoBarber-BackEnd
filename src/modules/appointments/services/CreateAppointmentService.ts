@@ -62,6 +62,7 @@ class CreateAppointmentService {
       user_id,
       date: appointmentDate,
     });
+    console.log(appointment.date);
 
     const dateFormatted = format(appointmentDate, "dd/MM/yyyy 'às' HH:mm'h'");
 
